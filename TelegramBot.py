@@ -4,7 +4,7 @@ import time
 import threading
 import random
 
-bot = telebot.TeleBot('8180337380:AAGTisNcXU6MQk5shLZDif11Ubx-S4smvks')
+bot = telebot.TeleBot('')
 
 reminder_threads = {}
 list = ["Мёд не портится: Археологи, исследуя древние египетские гробницы, обнаружили горшочки с мёдом, которому более 3000 лет. Этот мёд оказался всё ещё съедобным! Это связано с его уникальными свойствами, такими как низкое содержание воды и высокая кислотность, которые предотвращают рост бактерий.",
@@ -25,7 +25,7 @@ def fact_message(message):
 def send_reminders(chat_id):
     first_rem = "09:00"
     second_rem = "12:00"
-    end_rem = "03:19"
+    end_rem = "03:43"
     while True:
         now = datetime.datetime.now()
         now = datetime.datetime.now().strftime("%H:%M")
