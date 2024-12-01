@@ -25,7 +25,7 @@ def fact_message(message):
 def send_reminders(chat_id):
     first_rem = "09:00"
     second_rem = "12:00"
-    end_rem = "03:10"
+    end_rem = "03:19"
     while True:
         now = datetime.datetime.now()
         now = datetime.datetime.now().strftime("%H:%M")
